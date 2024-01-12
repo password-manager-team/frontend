@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <h1>Empty landing page</h1>
+        <h1 className="text-3xl font-bold underline">Empty landing page</h1>
     );
 }
 
