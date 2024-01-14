@@ -1,18 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #github {
     display: inline;
     float: right;
+}
+
+.topnavMain {
+    overflow: hidden;
+    background-color: hsl(286, 3%, 20%);
+    width: 100%;
+    height: auto;
 }
 
 #name {
     text-decoration: none;
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: hsl(286, 3%, 20%);
-}
-
-.topnav a {
+.topnavMain a {
     float: left;
     display: block;
     color: hsl(0, 0%, 94.9%);
@@ -22,42 +29,43 @@
     font-size: 2rem;
 }
 
-.topnav a:hover {
+.topnavMain a:hover {
     background-color: hsl(270, 100%, 97%);
     color: black;
     border-radius: 7px;
 }
 
-.topnav-right {
+.topnavRight {
     float: right;
 }
 
-.topnav .icon {
+.topnavMain .icon {
     display: none;
 }
 
 @media screen and (max-width: 600px) {
-    .topnav-right a:not(:first-child) {
+    .topnavRight a:not(:first-child) {
         display: none;
     }
 
-    .topnav-right a.icon {
-        display: inline-block;
+    .topnavRight a.icon {
+        float: right;
+        display: block;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .topnav.responsive {
+    .topnavMain.responsive {
         position: relative;
     }
 
-    .topnav.responsive .icon {
+    .topnavMain.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
 
-    .topnav.responsive a {
+    .topnavMain.responsive a {
         float: none;
         display: block;
         text-align: left;

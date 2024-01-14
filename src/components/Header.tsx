@@ -6,10 +6,10 @@ import '../Header.css';
 function Header() {
     let myFunction = () => {
         let x = document.getElementById("myTopNav");
-        if (x.className === "topnav") {
+        if (x.className === "topnavMain") {
             x.className += " responsive";
         } else {
-            x.className = "topnav";
+            x.className = "topnavMain";
         }
     };
 
@@ -17,9 +17,9 @@ function Header() {
         <>
             <header>
                 <nav>
-                    <div className="topnav" id="myTopNav">
+                    <div className="topnavMain" id="myTopNav">
                         <a id="name">awesomePM</a>
-                        <div className="topnav-right">
+                        <div className="topnavRight">
                             <a href="https://github.com" target="_blank">
                                 <svg id="github" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
