@@ -46,6 +46,7 @@ body {
 @media screen and (max-width: 600px) {
     .topnavRight a:not(:first-child) {
         display: none;
+        text-decoration: none;
     }
 
     .topnavRight a.icon {
